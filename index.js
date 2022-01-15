@@ -1,4 +1,19 @@
-
+w=window.innerWidth;
+h=window.innerHeight;
+var interval = setInterval(function() {
+    if(document.readyState === 'complete') {
+        console.log("loaded");
+        document.getElementById('loading').setAttribute('style','display:None;');
+        clearInterval(interval);
+    } 
+    else{
+        console.log("not loaded");
+    }   
+}, 100);
+if(w<500){
+    document.getElementById('vsrc').setAttribute('src','robo.mp4');
+    document.getElementById('video').load();
+}
 var opened=false; 
 document.getElementById('openmenu').addEventListener('click',()=>{
     if(!opened){
@@ -46,11 +61,12 @@ document.addEventListener('scroll', function () {
         document.querySelector('#card').classList.add('move');
         
     }
-    else{
-        document.querySelector('#card').classList.remove('move');
+    // else{
+    //     document.querySelector('#card').classList.remove('move');
        
-    }
+    // }
         
 }, {
     passive: true
 });
+

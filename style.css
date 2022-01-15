@@ -28,8 +28,8 @@ background-size: cover;
 width: 150px;
 height: 35px;
 border:  solid rgb(35, 55, 144) 5px;
-border-radius:40px;
-color: rgb(65, 94, 226);
+border-radius: 20px 40px 40px 20px;
+color: rgb(21, 26, 44);
 text-align: right;
 padding-right: 10px;
 margin-left: -40px;
@@ -190,6 +190,7 @@ font-weight: bold;
     display: flex;
     flex-direction: row;
     transform: rotateZ(-5deg);
+    box-shadow: 0 0 30px;
     flex-wrap: wrap;
     object-position: right center;
 }
@@ -229,6 +230,7 @@ font-weight: bold;
     height: 100vh;
     background: url(i3.jpg);
     background-size: cover;
+    margin-top: -10px;
     background-position-x: right;
     background-position: right center;
 }
@@ -256,14 +258,65 @@ font-weight: bold;
     margin-top: 10px;
     background-color: rgba(7,5,17,255);
 }
-@media only screen and (max-width: 400px) {
-    /* #card {
+@media only screen and (max-width: 600px) {
+    #card {
       left: 40px;
-    } */
+    }
     .omenu{
         top: calc(100% - 600px);
     }
     .board{
         left:0px;
+        transform: rotateZ(0deg);
     }
   }
+  .pbutton{
+      width: 150px;
+      height:30px;
+      border: double white 2px;
+      position: relative;
+      left: calc( 50% - 75px);
+      top: 250px;
+      border-radius: 40px;
+      font-size: x-large;
+      cursor: pointer;
+      text-align: center;
+      color: white;
+      z-index: 3;
+  }
+  .pbutton:hover {
+    box-shadow: 0 0 30px;
+  }
+  #video_wrapper
+{
+ margin:0px;
+ padding:0px;
+}
+video
+{
+margin-top: -35px;
+z-index: 0;
+width: 100vw;
+height: auto;
+position: sticky;
+}
+#wrapper
+{
+ text-align:center;
+ width:auto;
+ bottom: 300px;
+ z-index:2;
+}
+#loading{
+    z-index: 6;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: yellow;
+    overflow-y: hidden;
+    position: fixed;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 200px;
+    opacity: 70%;
+}
