@@ -26,6 +26,7 @@ document.getElementById('openmenu').addEventListener('click',()=>{
         document.getElementById('btn4').setAttribute('style','animation-name: mbtn;transform:translateX(0%);');
     setTimeout(()=>{
         document.getElementById('btn5').setAttribute('style','animation-name: mbtn;transform:translateX(0%);');
+        // document.querySelector('.menu').setAttribute('style','backdrop-filter: blur(3px);');
     },100);
     },100);
     },100);
@@ -33,6 +34,7 @@ document.getElementById('openmenu').addEventListener('click',()=>{
     opened=true;
 }
     else{
+        document.querySelector('.menu').removeAttribute('style');
         document.getElementById('btn1').setAttribute('style','animation-name: cmbtn;transform:translateX(-150%);');
         setTimeout(()=>{
             document.getElementById('btn2').setAttribute('style','animation-name: cmbtn;transform:translateX(-150%);');
@@ -49,24 +51,24 @@ document.getElementById('openmenu').addEventListener('click',()=>{
         opened=false;
     }
 });
-function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.bottom <= (window.innerHeight + 200) 
-    );
-}
-document.addEventListener('scroll', function () {
-    var box = document.querySelector('#container');
-    if(isInViewport(box)){
-        document.querySelector('#card').classList.add('move');
+// function isInViewport(el) {
+//     const rect = el.getBoundingClientRect();
+//     return (
+//         rect.bottom <= (window.innerHeight + 200) 
+//     );
+// }
+// document.addEventListener('scroll', function () {
+//     var box = document.querySelector('#container');
+//     if(isInViewport(box)){
+//         document.querySelector('#card').classList.add('move');
         
-    }
-    // else{
-    //     document.querySelector('#card').classList.remove('move');
+//     }
+//     // else{
+//     //     document.querySelector('#card').classList.remove('move');
        
-    // }
+//     // }
         
-}, {
-    passive: true
-});
+// }, {
+//     passive: true
+// });
 
