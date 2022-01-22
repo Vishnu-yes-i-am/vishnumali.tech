@@ -8,10 +8,10 @@ html{
 }
 .mainpage{
 width: 100vw;
-height: 100vh;
+height: 120vh;
 background-image: url('b1.jpg');
 background-color: whitesmoke;
-background-size:100vw 100vh;
+background-size:100vw 120vh;
 background-position: center;
 z-index: 3;
 }
@@ -208,45 +208,59 @@ font-weight: bold;
     background-position: center top;
     background-attachment: fixed;
 }
+#container3{
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    background-size: cover;
+    background-position-x: right;
+    background-position: right center;
+    margin-top: -10px;
+    padding-top: 100px;
+}
 .board{
     width: 300px;
     height:400px;
     margin: auto;
-    border-radius: 10px;
-    background: rgba(182,171,150,255);
-    border: rgb(220,123,92) 2px;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    position:relative;
+    background:rgb(230, 225, 225);
     display: flex;
     flex-direction: row;
-    transform: rotateZ(-5deg);
-    box-shadow: 0 0 30px;
+    transform: rotateZ(0deg);
     flex-wrap: wrap;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
     object-position: right center;
 }
 .square{
     width: 100px;
     height: 100px;
-    border: groove rgb(220,123,92) 12px;
-    color: rgb(220,123,92);
+    border: double skyblue  12px;
+    color: transparent ;
     font-size: 90px;
     text-align: center;
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 5px skyblue;
+    -webkit-text-stroke-color: skyblue;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 0 0 50px skyblue;
 }
 .circle{
     width:40px;
     height: 40px;
-    border: groove rgb(220,123,92) 12px;
+    border: double skyblue  12px;
     border-radius: 50%;
+    box-shadow: 0 0 5px skyblue;
     margin-left: 19px;
     margin-top: 13px;   
 }
 .dot{
     width:3px;
     height: 3px;
-    border: groove rgb(220,123,92) 5px;
+    border: solid skyblue  4px;
+    box-shadow: 0 0 5px skyblue;
     border-radius: 50%;
     margin-left: 80px;
 }
@@ -256,29 +270,26 @@ font-weight: bold;
     cursor: pointer;
     margin: auto;
 }
-#container3{
-    width: 100%;
-    height: 100vh;
-    background: url(i3.jpg);
-    background-size: cover;
-    margin-top: -10px;
-    background-position-x: right;
-    background-position: right center;
-}
+
 .logo_git{
     width: 80px;
     height: 80px;
-    background:url("git.png");
+    background:url("git2.png");
     margin: auto;
     margin-top: 10px;
+    filter: drop-shadow(0 0 15px skyblue) ;
     background-size: 80px 80px;
 }
 .connect{
     width: 100%;
     font-weight: bold;
-    color: rgb(220,123,92);
-    font-size: xx-large;
+    color: transparent;
+    font-size: 50px;
     text-align: center;
+    -webkit-text-stroke-color: skyblue;
+    font-family: 'Roboto', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 0 0 50px skyblue;
 }
 .bcircle{
     width: 30px;
@@ -306,10 +317,11 @@ font-weight: bold;
     }
     .mainpage{
         background-image: url('b2.jpg');
+        height: 100vh;
+        background-size: 100vw 100vh;
     }
     .board{
         left:0px;
-        transform: rotateZ(0deg);
     }
     .button{
         color: skyblue;
@@ -369,4 +381,20 @@ position: sticky;
     text-align: center;
     padding-top: 200px;
     opacity: 70%;
+}
+.footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+.foption{
+    width: 49vw;
+    color: white;
+    text-align: center;
+    margin: auto;
+    
+    font-size: x-large;
 }
