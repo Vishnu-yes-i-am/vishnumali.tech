@@ -1,3 +1,6 @@
+function scrollup(){
+    window.scrollTo(0,0);
+}
 setInterval(() => {
     setTimeout(() => {
     swipe(4);
