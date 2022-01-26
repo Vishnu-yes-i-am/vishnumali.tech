@@ -228,4 +228,6 @@ body{
         display:none;
     }
     .mob{display:initial}
-}
+img{
+width:100vw;
+height:auto;}
