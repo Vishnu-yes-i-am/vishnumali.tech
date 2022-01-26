@@ -133,6 +133,7 @@ body{
     width: 160px;
     height: 160px;
     background-color: skyblue;
+    background-size: 160px 160px;
     margin: auto;
     margin-left: 5px;
     margin-top: 20px;
@@ -161,6 +162,8 @@ body{
     height: calc(100vh - 150px);
     margin: auto;
     background-color: rgb(158, 165, 65);
+    background-image: url('headblog1.png');
+    background-size: calc(min(100%,700px)) calc(100vh - 150px);
 }
 .blogbrief{
     border-top:solid white 2px;
