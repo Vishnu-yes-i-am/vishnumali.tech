@@ -9,7 +9,7 @@ html{
 .mainpage{
 width: 100vw;
 height: 120vh;
-background-image: url('b1.jpg');
+background-image: url('b1.webp');
 background-color: whitesmoke;
 background-size:100vw 120vh;
 background-position: center;
@@ -177,7 +177,7 @@ font-weight: bold;
 #container2{
     width: 100vw;
     height: 60vh;
-    background-image: url('p1.jpg');
+    background-image: url('p1.webp');
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
@@ -290,7 +290,7 @@ font-weight: bold;
         box-shadow: skyblue 0 0 20px;
     }
     .mainpage{
-        background-image: url('b2.jpg');
+        background-image: url('b2.webp');
         height: 100vh;
         background-size: 100vw 100vh;
     }
