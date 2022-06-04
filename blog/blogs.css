@@ -1,21 +1,22 @@
-<<<<<<< HEAD:blog/blogs.css
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@700&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.nav{
-    width:100vw;
+
+.nav {
+    width: 100vw;
     height: 100px;
-    position:fixed;
+    position: fixed;
     top: 0;
     display: flex;
     background-color: black;
 }
-body{
+
+body {
     background-color: rgb(20, 18, 18);
 }
-.logo{
+
+.logo {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -23,7 +24,8 @@ body{
     background-size: 100px 100px;
     background: url('/logo.png');
 }
-.searchbox{
+
+.searchbox {
     width: 300px;
     height: 40px;
     margin: auto;
@@ -33,37 +35,41 @@ body{
     display: flex;
     overflow: hidden;
 }
-.searchbutton{
-    width:40px;
+
+.searchbutton {
+    width: 40px;
     height: 40px;
     background-color: tomato;
-    background-image: url(search.jpg);
     background-size: cover;
-    cursor:pointer;
+    cursor: pointer;
 }
-.inputbox{
+
+.inputbox {
     width: 250px;
     height: 100%;
     padding-left: 10px;
     border: transparent;
     font-size: x-large;
-    
+
 }
-.optionmenu{
+
+.optionmenu {
     width: 500px;
     height: 50px;
     display: flex;
     right: 0;
     margin-top: 30px;
 }
-.mob{
+
+.mob {
     height: 300px;
     position: relative;
-    display:none;
+    display: none;
     flex-direction: column;
-    top: 30px; 
+    top: 30px;
 }
-.menubutton{
+
+.menubutton {
     width: 50px;
     height: 40px;
     display: flex;
@@ -71,14 +77,16 @@ body{
     margin-left: 50px;
     margin-top: 5px;
 }
-.line{
-    width:40px;
-    height:4px;
+
+.line {
+    width: 40px;
+    height: 4px;
     margin: auto;
-    background-color:tomato;
-    
+    background-color: tomato;
+
 }
-.optionmenu2{
+
+.optionmenu2 {
     width: 120px;
     height: 200px;
     visibility: hidden;
@@ -87,32 +95,37 @@ body{
     border-radius: 10px;
     right: 0;
 }
-.option{
+
+.option {
     width: 80px;
-    height:40px;
+    height: 40px;
     margin: auto;
     margin-top: 9px;
     color: tomato;
     font-size: x-large;
     cursor: pointer;
 }
-.container1{
+
+.container1 {
     width: 100vw;
     height: calc(100vh - 100px);
     margin-top: 120px;
 }
-.container{
+
+.container {
     width: 100vw;
     height: auto;
     margin-top: 120px;
 }
-.latest{
+
+.latest {
     width: 100%;
     height: 250px;
     margin-top: 50px;
     background-color: transparent;
 }
-.text1{
+
+.text1 {
     width: fit-content;
     height: 65px;
     font-size: 52px;
@@ -120,7 +133,8 @@ body{
     color: blue;
     margin: auto;
 }
-.recentblogs{
+
+.recentblogs {
     width: 100%;
     max-width: 700px;
     height: 200px;
@@ -130,7 +144,8 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.rblog{
+
+.rblog {
     width: 160px;
     height: 160px;
     background-color: skyblue;
@@ -141,59 +156,66 @@ body{
     border-radius: 5px;
     border: solid black;
 }
-.container2{
+
+.container2 {
     width: 100vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.container3{
+
+.container3 {
     width: 100%;
     max-width: 700px;
     height: calc(100vh - 150px);
     margin: auto;
     border: solid 10px rgb(37, 36, 36);
-    border-radius:20px;
+    border-radius: 20px;
     background-color: rgb(44, 43, 43);
     box-shadow: inset darkgrey 0 0 0.5px;
 }
-.bloghead{
+
+.bloghead {
     width: 100%;
     max-width: 700px;
     height: calc(100vh - 150px);
     margin: auto;
     background-color: rgb(158, 165, 65);
     background-image: url('/blog/adding_gravity_using_js/headblog1.png');
-    background-size: calc(min(100%,700px)) calc(100vh - 150px);
+    background-size: calc(min(100%, 700px)) calc(100vh - 150px);
 }
-.blogbrief{
-    border-top:solid white 2px;
+
+.blogbrief {
+    border-top: solid white 2px;
     margin-top: 50px;
     padding: 20px;
     width: 95%;
     height: auto;
     color: white;
     font-size: x-large;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
     word-wrap: break-word;
 }
-.blogpage{
+
+.blogpage {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
 
-.bloggrid{
+.bloggrid {
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.mblog{
+
+.mblog {
     width: 300px;
     height: 250px;
     background-color: rgb(95, 95, 54);
@@ -201,7 +223,8 @@ body{
     margin-top: 5px;
     border: solid black;
 }
-.container4{
+
+.container4 {
     width: 300px;
     margin: auto;
     height: calc(100vh - 150px);
@@ -210,44 +233,54 @@ body{
     flex-direction: column;
     overflow: scroll;
 }
-.story{
+
+.story {
     width: 100%;
     height: 100px;
     background-color: darkslateblue;
     margin: auto;
     margin-top: 10px;
-    
+
 }
-.date{
+
+.date {
     position: static;
-    margin-left:calc(100% - 170px);
+    margin-left: calc(100% - 170px);
     width: 150px;
     color: wheat;
 }
-@media screen and (max-width:600px){
-    .optionmenu{
-        display:none;
+
+@media screen and (max-width:600px) {
+    .optionmenu {
+        display: none;
     }
-    .mob{display:initial}
+
+    .mob {
+        display: initial
+    }
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@700&display=swap');
-*{
+
+=======@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
-.nav{
-    width:100vw;
+
+.nav {
+    width: 100vw;
     height: 100px;
-    position:fixed;
+    position: fixed;
     top: 0;
     display: flex;
     background-color: black;
 }
-body{
+
+body {
     background-color: rgb(20, 18, 18);
 }
-.logo{
+
+.logo {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -255,7 +288,8 @@ body{
     background-size: 100px 100px;
     background: url('logo.png');
 }
-.searchbox{
+
+.searchbox {
     width: 300px;
     height: 40px;
     margin: auto;
@@ -265,37 +299,42 @@ body{
     display: flex;
     overflow: hidden;
 }
-.searchbutton{
-    width:40px;
+
+.searchbutton {
+    width: 40px;
     height: 40px;
     background-color: tomato;
     background-image: url(search.jpg);
     background-size: cover;
-    cursor:pointer;
+    cursor: pointer;
 }
-.inputbox{
+
+.inputbox {
     width: 250px;
     height: 100%;
     padding-left: 10px;
     border: transparent;
     font-size: x-large;
-    
+
 }
-.optionmenu{
+
+.optionmenu {
     width: 500px;
     height: 50px;
     display: flex;
     right: 0;
     margin-top: 30px;
 }
-.mob{
+
+.mob {
     height: 300px;
     position: relative;
-    display:none;
+    display: none;
     flex-direction: column;
-    top: 30px; 
+    top: 30px;
 }
-.menubutton{
+
+.menubutton {
     width: 50px;
     height: 40px;
     display: flex;
@@ -303,14 +342,16 @@ body{
     margin-left: 50px;
     margin-top: 5px;
 }
-.line{
-    width:40px;
-    height:4px;
+
+.line {
+    width: 40px;
+    height: 4px;
     margin: auto;
-    background-color:tomato;
-    
+    background-color: tomato;
+
 }
-.optionmenu2{
+
+.optionmenu2 {
     width: 120px;
     height: 200px;
     visibility: hidden;
@@ -319,32 +360,37 @@ body{
     border-radius: 10px;
     right: 0;
 }
-.option{
+
+.option {
     width: 80px;
-    height:40px;
+    height: 40px;
     margin: auto;
     margin-top: 9px;
     color: tomato;
     font-size: x-large;
     cursor: pointer;
 }
-.container1{
+
+.container1 {
     width: 100vw;
     height: calc(100vh - 100px);
     margin-top: 120px;
 }
-.container{
+
+.container {
     width: 100vw;
     height: auto;
     margin-top: 120px;
 }
-.latest{
+
+.latest {
     width: 100%;
     height: 250px;
     margin-top: 50px;
     background-color: transparent;
 }
-.text1{
+
+.text1 {
     width: fit-content;
     height: 65px;
     font-size: 52px;
@@ -352,7 +398,8 @@ body{
     color: blue;
     margin: auto;
 }
-.recentblogs{
+
+.recentblogs {
     width: 100%;
     max-width: 700px;
     height: 200px;
@@ -362,7 +409,8 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.rblog{
+
+.rblog {
     width: 160px;
     height: 160px;
     background-color: skyblue;
@@ -373,59 +421,66 @@ body{
     border-radius: 5px;
     border: solid black;
 }
-.container2{
+
+.container2 {
     width: 100vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.container3{
+
+.container3 {
     width: 100%;
     max-width: 700px;
     height: calc(100vh - 150px);
     margin: auto;
     border: solid 10px rgb(37, 36, 36);
-    border-radius:20px;
+    border-radius: 20px;
     background-color: rgb(44, 43, 43);
     box-shadow: inset darkgrey 0 0 0.5px;
 }
-.bloghead{
+
+.bloghead {
     width: 100%;
     max-width: 700px;
     height: calc(100vh - 150px);
     margin: auto;
     background-color: rgb(158, 165, 65);
     background-image: url('headblog1.png');
-    background-size: calc(min(100%,700px)) calc(100vh - 150px);
+    background-size: calc(min(100%, 700px)) calc(100vh - 150px);
 }
-.blogbrief{
-    border-top:solid white 2px;
+
+.blogbrief {
+    border-top: solid white 2px;
     margin-top: 50px;
     padding: 20px;
     width: 95%;
     height: auto;
     color: white;
     font-size: x-large;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
     word-wrap: break-word;
 }
-.blogpage{
+
+.blogpage {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
 
-.bloggrid{
+.bloggrid {
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.mblog{
+
+.mblog {
     width: 300px;
     height: 250px;
     background-color: rgb(95, 95, 54);
@@ -433,7 +488,8 @@ body{
     margin-top: 5px;
     border: solid black;
 }
-.container4{
+
+.container4 {
     width: 300px;
     margin: auto;
     height: calc(100vh - 150px);
@@ -442,26 +498,34 @@ body{
     flex-direction: column;
     overflow: scroll;
 }
-.story{
+
+.story {
     width: 100%;
     height: 100px;
     background-color: darkslateblue;
     margin: auto;
     margin-top: 10px;
-    
+
 }
-.date{
+
+.date {
     position: static;
-    margin-left:calc(100% - 170px);
+    margin-left: calc(100% - 170px);
     width: 150px;
     color: wheat;
 }
-@media screen and (max-width:600px){
-    .optionmenu{
-        display:none;
+
+@media screen and (max-width:600px) {
+    .optionmenu {
+        display: none;
     }
-    .mob{display:initial}
-img{
-width:100vw;
-height:auto;}
->>>>>>> 566411c2ed8bb3c9b9eb8d91e8eec2212b6d104a:blogs.css
+
+    .mob {
+        display: initial
+    }
+
+    img {
+        width: 100vw;
+        height: auto;
+    }
+}

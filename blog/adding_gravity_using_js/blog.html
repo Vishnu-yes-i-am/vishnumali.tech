@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,71 +10,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
 </head>
+
 <body>
     <div class="nav">
-       <div class="logo"></div>
-       <div class=optionmenu>
-           <div class="option" id="option1">Home</div>
-           <div class="option" id="option2">Article</div>
-           <div class="option" id="option3">Team</div>
-           <div class="option" id="option4">Contact</div>
-       </div>
-       <div class="mob">
-       <div class="menubutton">
-           <div class="line"></div>
-           <div class="line"></div>
-           <div class="line"></div>
-       </div>
-       <div class=optionmenu2>
-        <div class="option" id="option1">Home</div>
-        <div class="option" id="option2">Article</div>
-        <div class="option" id="option3">Team</div>
-        <div class="option" id="option4">Contact</div>
+        <div class="logo"></div>
+        <div class=optionmenu>
+            <div class="option" id="option1">Home</div>
+            <div class="option" id="option2">Article</div>
+            <div class="option" id="option3">Team</div>
+            <div class="option" id="option4">Contact</div>
+        </div>
+        <div class="mob">
+            <div class="menubutton">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class=optionmenu2>
+                <div class="option" id="option1">Home</div>
+                <div class="option" id="option2">Article</div>
+                <div class="option" id="option3">Team</div>
+                <div class="option" id="option4">Contact</div>
+            </div>
+        </div>
     </div>
-    </div>
-    </div> 
     <div class="container">
-    <div class="container2">
-        <div class="bloghead">
+        <div class="container2">
+            <img src="./headblog1.png" alt="blog_image" class="bloghead">
+            <div class="container4">
+                <div class="text1">Top Stories</div>
+                <div class="story" id="story1"></div>
+                <div class="story" id="story2"></div>
+                <div class="story" id="story3"></div>
+                <div class="story" id="story4"></div>
+                <div class="story" id="story5"></div>
+            </div>
         </div>
-        <div class="container4">
-            <div class="text1">Top Stories</div>
-            <div class="story" id="story1"></div>
-            <div class="story" id="story2"></div>
-            <div class="story" id="story3"></div>
-            <div class="story" id="story4"></div>
-            <div class="story" id="story5"></div>
+        <div class="blogbrief">
+            <div class="date">12 Dec 2021</div>
+            <h1>How to add gravity in any element of your html page using javascript (js) ?</h1>
+            <br>
+            <br>
+            <p>When we are in the initial stage of learning webdevelopement stuffs we are eager to make such projects or
+                games using javascript in which we need some concept of physics to make the project realistic.Gravity is
+                one of these concepts and at first we got into wonder who to apply gravity to our page.So in case you
+                need this i am here with a solution to your problem.Let's Start</p>
+            <br>
+            <br>
+            <h3>Comparing the sizes of your elements with real world items.</h3>
+            <br>
+            <p>So our first step will be comparing the sizes of elements in our projects with real world for example if
+                you are using a ball in your project and want to apply gravity on it.Assuming you have taken a cricket
+                ball and given a width and height of 20px to it that means 20px will be its diameter and actual diameter
+                of a cricket ball is approx 7.1 cm .On comparing these two 20px = 7.1 cm we get 1px=0.355 cm or we can
+                say 1px is equal to 0.00355 meter.because we all know that SI unit of gravity is meter per second square
+                and we will need it in meters.
+            </p>
+            <br><br>
+            <h3>Finding acceleration due to gravity in pixels.</h3>
+            <br>
+            <p>Acceleration due to gravity is approximately 9.8 m/s2 .we have find out that 1px is equal to 0.00355
+                meter from this we can get 1 meter =281.69 pexels.Now acceleration due to gravity comes out as approx
+                2760 pexels/sec2. Now consider one thing that we have to also change seconds into miliseconds and if we
+                want sreen frequency as 50 hz i.e. changing 50 frames in 1 second we must run our loop at interval
+                1000/50 = 20ms and we have to adjust gravity value as time interval of our loop.Let's do it.</p>
+            <br><br>
+            <img src="blog1img1.png" alt="">
+            <br><br>
+            <h3>Apply the gravity on object</h3>
+            <br>
+            <p>Now its time to apply this gravity value to our object so its very easy to apply gravity on any object
+                you want.you just have to change its position w.r.t time.You just need to declare a variable for
+                velocity and its position lets assume these as Vy and y respectively.And finally add value of gravity to
+                velocity i.e.Vy+=g (1.104) and add this velocity to the y coordinate which is y, like this y+=Vy.
+                Remember these changes must be in the loop to run in each loop execution.and also you have to set a
+                ground level ,without it tha ball will go down and down and down.</p>
+            <br><br>
+            <h3>Setting rebounding of object and adding elasticity to the object.</h3><br>
+            <p>Now we will fix a ground level lets assume at 500px from the top.so when the ball reach the ground level
+                or we can say collide to the ground it must rebound considering its elasticity so we will change
+                direction of its velocity and velocity's magnitude to vy*e .Here e is elasticity cofficient whose value
+                is between 0 and 1.To change direction just change vy to -vy.</p><br><br>
+            <img src="blog1img2.png" alt="">
         </div>
     </div>
-    <div class="blogbrief"> 
-        <div class="date">12 Dec 2021</div>
-        <h1>How to add gravity in any element of your html page using javascript (js) ?</h1>
-        <br>
-        <br>
-        <p>When we are in the initial stage of learning webdevelopement stuffs we are eager to make such projects or games using javascript in which we need some concept of physics to make the project realistic.Gravity  is one of these concepts and at first we got into wonder who to apply gravity to our page.So in case you need this i am here with a solution to your problem.Let's Start</p>
-        <br>
-        <br>
-        <h3>Comparing the sizes of your elements with real world items.</h3>
-        <br>
-        <p>So our first step will be comparing the sizes of  elements in our projects with real world for example if you are using a ball in your project and want to apply gravity on it.Assuming you have taken a cricket ball and given a width and height of 20px to it that means 20px will be its diameter and actual diameter of a cricket ball is approx 7.1 cm .On comparing these two 20px = 7.1 cm we get 1px=0.355 cm or we can say 1px is equal to 0.00355 meter.because we all know that SI unit of gravity is meter per second square and we will  need it in meters.
-        </p>
-        <br><br>
-        <h3>Finding acceleration due to gravity in pixels.</h3>
-        <br>
-        <p>Acceleration due to gravity is approximately 9.8 m/s2 .we have find out that 1px is equal to 0.00355 meter from this we can get 1 meter =281.69 pexels.Now acceleration due to gravity comes out as  approx 2760 pexels/sec2. Now consider one thing that we have to also change seconds into miliseconds and if we want  sreen frequency as 50 hz i.e. changing 50 frames in 1 second we must run our loop at interval 1000/50 = 20ms and we have to adjust gravity value as time interval of our loop.Let's do it.</p>
-        <br><br>
-        <img src="blog1img1.png" alt="">
-        <br><br>
-        <h3>Apply the gravity on object</h3>
-        <br>
-        <p>Now its time to apply this gravity value to our object so its very easy to apply gravity on any object you want.you just have to change its position w.r.t time.You just need to declare a variable for velocity and its position lets assume these as Vy and y respectively.And finally add value of gravity to velocity i.e.Vy+=g (1.104) and add this velocity to the y coordinate which is y, like this y+=Vy.
-            Remember these changes must be in the loop to run in each loop execution.and also you have to set a ground level ,without it tha ball will go down and down and down.</p>
-    <br><br>
-    <h3>Setting rebounding of object and adding elasticity to the object.</h3><br>
-    <p>Now we will fix a ground level lets assume at 500px from the top.so when the ball reach the ground level or we can say collide to the ground it must rebound considering its elasticity so we will change direction of its velocity and velocity's magnitude to vy*e .Here e is elasticity cofficient whose value is between 0 and 1.To change direction just change vy to -vy.</p><br><br>
-    <img src="blog1img2.png" alt="">
-    </div>
-</div>
     <div class="footer">
         <div class="foption" onclick="location.href='/index.html'">Home</div>
         <div class="foption" onclick="location.href='/blog/blogs.html'">Blogs</div>
@@ -84,4 +104,5 @@
     </div>
     <script src="/blog/blogs.js"></script>
 </body>
+
 </html>
